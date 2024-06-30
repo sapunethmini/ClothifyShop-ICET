@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="816.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.Order.PlaceOrderController">
+    <children>
+        <Label layoutX="280.0" layoutY="4.0" text="Place Orer Form" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="cmbItemCode" layoutX="22.0" layoutY="285.0" onAction="#btnItemOnaction" prefWidth="150.0" promptText="Item ID" />
+        <Label layoutX="23.0" layoutY="239.0" text="Email" />
+        <Label layoutX="23.0" layoutY="196.0" text="company" />
+        <Label fx:id="lblnmmn" layoutX="26.0" layoutY="359.0" text="Name" />
+        <Label layoutX="26.0" layoutY="448.0" text="U_price" />
+        <Label layoutX="26.0" layoutY="405.0" text="P_Size" />
+        <Label layoutX="30.0" layoutY="491.0" text="QYT" />
+        <Label layoutX="276.0" layoutY="101.0" text="Time :" />
+        <Label layoutX="670.0" layoutY="101.0" text="Order ID" />
+        <Label layoutX="478.0" layoutY="101.0" text="Date :" />
+        <Separator layoutX="264.0" layoutY="145.0" orientation="VERTICAL" prefHeight="428.0" prefWidth="0.0" />
+        <Separator layoutX="267.0" layoutY="125.0" prefHeight="5.0" prefWidth="555.0" />
+        <Label fx:id="lblTime" layoutX="332.0" layoutY="101.0" text="10:38" />
+        <Label fx:id="lblDate" layoutX="531.0" layoutY="101.0" text="2024-10-12" />
+        <Label fx:id="lblOrderID" layoutX="747.0" layoutY="101.0" text="O000" />
+        <Label fx:id="lblEmpName" layoutX="90.0" layoutY="150.0" text="Saman" />
+        <Label fx:id="lblcompnay" layoutX="90.0" layoutY="196.0" text="gampaha" />
+        <Label fx:id="lblEmail" layoutX="90.0" layoutY="239.0" text="0.0" />
+        <Label fx:id="lblNameItem" layoutX="92.0" layoutY="359.0" text="DSCE" />
+        <Label fx:id="lblPackSize" layoutX="91.0" layoutY="405.0" text="Pack size" />
+        <Label fx:id="lblunitPrice" layoutX="97.0" layoutY="448.0" text="0.0" />
+        <Label fx:id="lblQYT" layoutX="99.0" layoutY="491.0" text="QYT" />
+        <TableView fx:id="tblCart" layoutX="335.0" layoutY="161.0" prefHeight="381.0" prefWidth="470.0">
+            <columns>
+                <TableColumn fx:id="colItemCOde" prefWidth="107.0" text="ItemCode" />
+                <TableColumn fx:id="colName" prefWidth="99.0" text="Name" />
+                <TableColumn fx:id="colQTY" prefWidth="73.0" text="QTY" />
+                <TableColumn fx:id="colU_price" prefWidth="89.0" text="UnitPrice" />
+                <TableColumn fx:id="colTotal" prefWidth="101.0" text="Total" />
+            </columns>
+        </TableView>
+        <Button layoutX="110.0" layoutY="548.0" mnemonicParsing="false" onAction="#btnAddCartOnAction" style="-fx-background-color: #1e3799;" text="Add To Cart" textFill="WHITE" />
+        <Button fx:id="btnClearOnAction" layoutX="36.0" layoutY="548.0" mnemonicParsing="false" style="-fx-background-color: #1e3799;" text="Clear" textFill="WHITE" />
+        <Button layoutX="705.0" layoutY="558.0" mnemonicParsing="false" onAction="#btnPlaceOrderOnAction" prefHeight="31.0" prefWidth="100.0" style="-fx-background-color: #1e3799;" text="Place Order" textFill="WHITE" />
+        <Label layoutX="267.0" layoutY="564.0" text="Total_Charge : " />
+        <Label fx:id="lblTotalCharge" layoutX="365.0" layoutY="564.0" prefHeight="21.0" prefWidth="45.0" text="0" />
+        <TextField fx:id="txtQTY" layoutX="152.0" layoutY="476.0" onAction="#txtAddOnAction" prefHeight="31.0" prefWidth="100.0" promptText="addCount" />
+      <TextField fx:id="txtEmpId" layoutX="24.0" layoutY="96.0" onAction="#txtempIdOnAcrion" prefHeight="31.0" prefWidth="150.0" promptText="Emp_Id" />
+      <Label layoutX="23.0" layoutY="151.0" text="Name" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="89.0" layoutY="-6.0" stroke="BLACK" strokeType="INSIDE" width="822.0" />
+      <Label layoutX="289.0" layoutY="3.0" text="Place order" textFill="#fcfcfc">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>

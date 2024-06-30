@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="613.0" prefWidth="1130.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.Employee.ShowSuppplierController">
+    <children>
+        <Rectangle fx:id="cmbSupplierID" arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="147.0" layoutX="-38.0" layoutY="-19.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1171.0" />
+        <Label layoutX="134.0" layoutY="20.0" text="Suppler Details" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="48.0" />
+            </font>
+        </Label>
+        <Label layoutX="149.0" layoutY="165.0" prefHeight="32.0" prefWidth="105.0" text="Sippplier ID" />
+        <Button layoutX="502.0" layoutY="165.0" mnemonicParsing="false" onAction="#btnSearchOnACtion" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: #0c2461;" text="Search" textFill="WHITE" />
+        <Label layoutX="149.0" layoutY="244.0" prefHeight="32.0" prefWidth="105.0" text="Name" />
+        <Label layoutX="149.0" layoutY="304.0" prefHeight="32.0" prefWidth="105.0" text="Comapany" />
+        <Label layoutX="149.0" layoutY="351.0" prefHeight="32.0" prefWidth="105.0" text="Email" />
+        <Label layoutX="288.0" layoutY="304.0" prefHeight="32.0" prefWidth="105.0" />
+        <Button layoutX="503.0" layoutY="229.0" mnemonicParsing="false" onAction="#bynDeleteOnAction" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: #0c2461;" text="Delete" textFill="WHITE" />
+        <Button layoutX="167.0" layoutY="426.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: #0c2461;" text="Update" textFill="WHITE" />
+        <TextField fx:id="txtcomap" disable="true" layoutX="254.0" layoutY="305.0" />
+        <TextField fx:id="txtEmail" disable="true" layoutX="254.0" layoutY="352.0" />
+        <TextField fx:id="txtname" disable="true" layoutX="254.0" layoutY="245.0" />
+        <Button layoutX="364.0" layoutY="426.0" mnemonicParsing="false" onAction="#btnSubmitModifiOnAction" prefHeight="44.0" prefWidth="170.0" style="-fx-background-color: #0c2461;" text="Submit Modification" textFill="WHITE" />
+      <TableView fx:id="tblSuolyProduct" layoutX="669.0" layoutY="147.0" prefHeight="421.0" prefWidth="402.0">
+        <columns>
+          <TableColumn fx:id="colProductID" prefWidth="95.0" text="Product ID" />
+          <TableColumn fx:id="colCategory" prefWidth="98.0" text="Category" />
+            <TableColumn fx:id="colQTY" prefWidth="107.0" text="Quantity" />
+            <TableColumn fx:id="colTotalCharge" prefWidth="89.0" text="Total Value" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmbSupId" layoutX="254.0" layoutY="165.0" prefHeight="32.0" prefWidth="187.0" />
+    </children>
+</AnchorPane>

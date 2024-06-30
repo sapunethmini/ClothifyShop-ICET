@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="572.0" prefWidth="852.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.Admin.RegistartionController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="572.0" stroke="BLACK" strokeType="INSIDE" width="444.0" />
+      <Label layoutX="61.0" layoutY="47.0" text="Registration" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="56.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="146.0" prefHeight="30.0" prefWidth="165.0" text="Name" />
+      <Label layoutX="463.0" layoutY="281.0" prefHeight="30.0" prefWidth="165.0" text="Comapny" />
+      <Label layoutX="463.0" layoutY="225.0" prefHeight="30.0" prefWidth="165.0" text="Email" />
+      <TextField fx:id="txtName" layoutX="556.0" layoutY="150.0" prefHeight="31.0" prefWidth="297.0" />
+      <TextField fx:id="txtEmail" layoutX="556.0" layoutY="224.0" prefHeight="31.0" prefWidth="297.0" />
+      <TextField fx:id="txtComapny" layoutX="556.0" layoutY="280.0" prefHeight="31.0" prefWidth="297.0" />
+      <Button layoutX="642.0" layoutY="429.0" mnemonicParsing="false" onAction="#btnRegisterEmployee" prefHeight="54.0" prefWidth="165.0" style="-fx-background-color: #1e3799;" text="Register" textFill="WHITE" />
+      <Label layoutX="463.0" layoutY="338.0" prefHeight="30.0" prefWidth="165.0" text="Password" />
+      <TextField fx:id="txtPassword" layoutX="556.0" layoutY="337.0" prefHeight="31.0" prefWidth="297.0" />
+      <Label layoutX="463.0" layoutY="80.0" prefHeight="30.0" prefWidth="52.0" text="UserID" />
+      <Label fx:id="lblUserId" layoutX="556.0" layoutY="80.0" prefHeight="30.0" prefWidth="117.0" text="#000" />
+   </children>
+</AnchorPane>
