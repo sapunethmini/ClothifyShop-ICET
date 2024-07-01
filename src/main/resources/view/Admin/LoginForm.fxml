@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="557.0" prefWidth="841.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.Admin.LogginFormController">
+   <children>
+      <TextField fx:id="txtUserName" layoutX="438.0" layoutY="125.0" prefHeight="50.0" prefWidth="283.0" promptText="Username" />
+      <TextField fx:id="txtpassword" layoutX="438.0" layoutY="213.0" prefHeight="50.0" prefWidth="283.0" promptText="Password" />
+      <Button layoutX="627.0" layoutY="307.0" mnemonicParsing="false" onAction="#btnlogOnAction" prefHeight="40.0" prefWidth="93.0" style="-fx-background-color: #1e3799;" text="log" textFill="WHITE" />
+      <Button layoutX="438.0" layoutY="292.0" mnemonicParsing="false" onAction="#btnFrogotPwOnAction" prefHeight="31.0" prefWidth="134.0" text="Froget Password" textFill="#b22626" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="557.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="409.0" />
+      <Label layoutX="38.0" layoutY="43.0" prefHeight="115.0" prefWidth="333.0" text="TryOnFit" textFill="WHITE">
+         <font>
+            <Font name="Arial Black" size="68.0" />
+         </font>
+      </Label>
+      <Label layoutX="133.0" layoutY="158.0" text="Trendy V i b e s . . ." textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="22.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="300.0" fitWidth="355.0" layoutX="45.0" layoutY="197.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/us-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
